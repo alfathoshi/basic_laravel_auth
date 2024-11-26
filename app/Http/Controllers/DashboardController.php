@@ -10,8 +10,6 @@ class DashboardController extends Controller
     public function index()
     {
         $user = Auth::user();
-
-        // Pass data user ke view
         return view('dashboard.index', compact('user'));
     }
 

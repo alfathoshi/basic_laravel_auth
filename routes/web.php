@@ -18,11 +18,11 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
-Route::get('/showRegister', [AuthController::class, 'showRegister']); // Show Register Form
-Route::post('/register', [AuthController::class, 'register']); // Handle Register
+Route::get('/showRegister', [AuthController::class, 'showRegister']); 
+Route::post('/register', [AuthController::class, 'register']); 
 
-Route::get('/showLogin', [AuthController::class, 'showLogin']); // Show Login Form
-Route::post('/login', [AuthController::class, 'login']); // Handle Login
+Route::get('/showLogin', [AuthController::class, 'showLogin']); 
+Route::post('/login', [AuthController::class, 'login']); 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::post('/logout', [AuthController::class, 'logout']);
 Route::get('/login', [AuthController::class, 'showLogin']);

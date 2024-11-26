@@ -6,7 +6,6 @@ use App\Models\User;
 use Auth;
 use Hash;
 use Illuminate\Http\Request;
-use Password;
 
 class AuthController extends Controller
 {
